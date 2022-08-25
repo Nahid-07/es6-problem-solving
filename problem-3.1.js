@@ -8,4 +8,10 @@ const myArray = [ 1, 9, 17, 22 ];
 const sumOfArray = myArray.reduce((previousNumber , currentNumber)=>{
     return previousNumber+currentNumber
 });
-console.log(sumOfArray)
+// console.log(sumOfArray)
+
+let sum= 0;
+for(let items of myArray){
+    sum += items
+}
+console.log(sum)
