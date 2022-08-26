@@ -13,9 +13,17 @@ const people = [
     {name : 'Rina', age : 15},
     {name : 'Shuchorita', age : 22}
 ];
+
+
 let sum = 0;
 for(let element of people){
     const ages = element.age
     sum += ages;
 }
-console.log(sum)
+// console.log(sum)
+
+// lets solve this with array.reduce
+const arrayOfAge = people.reduce((previousValue,currentValue)=>{
+    return previousValue.age + currentValue.age;
+});
+console.log(arrayOfAge);
