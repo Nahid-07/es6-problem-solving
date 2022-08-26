@@ -24,6 +24,6 @@ for(let element of people){
 
 // lets solve this with array.reduce
 const arrayOfAge = people.reduce((previousValue,currentValue)=>{
-    return previousValue.age + currentValue.age;
-});
+    return previousValue + currentValue.age;
+},0);
 console.log(arrayOfAge);
